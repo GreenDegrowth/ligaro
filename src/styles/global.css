@@ -61,6 +61,15 @@ body {
     color 0.3s ease;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
 h1 {
   font-family: "Lora Variable", "Lora", serif;
   color: var(--color-heading);
