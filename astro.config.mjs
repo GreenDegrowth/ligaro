@@ -1,4 +1,6 @@
+import inline from "@playform/inline";
 import sitemap from "@astrojs/sitemap";
+import compressor from "astro-compressor";
 import { defineConfig, fontProviders } from "astro/config";
 
 export default defineConfig({
@@ -26,7 +28,7 @@ export default defineConfig({
       },
     },
   },
-  integrations: [sitemap()],
+  integrations: [sitemap(), inline(), compressor()],
   experimental: {
     rustCompiler: true,
   },

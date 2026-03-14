@@ -70,6 +70,8 @@ import { Content as SupportContent } from "../sections/support.md";
     margin-top: 2.5rem;
     position: relative;
     padding-left: 1rem;
+    content-visibility: auto;
+    contain-intrinsic-size: 0 200px;
   }
 
   :global(.section-personal::before),
@@ -168,8 +170,10 @@ import { Content as SupportContent } from "../sections/support.md";
     background-size: 100% 2px;
   }
 
-  :global(a i) {
-    font-size: 1.1em;
+  :global(a i),
+  :global(a svg) {
+    width: 1.1em;
+    height: 1.1em;
     flex: 0 0 auto;
   }
 
