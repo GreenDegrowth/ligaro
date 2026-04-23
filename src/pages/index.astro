@@ -153,8 +153,8 @@ const recentPosts = posts.slice(0, 5);
 
   .post-date {
     font-family: var(--font-sans);
-    font-size: 0.7rem;
-    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--ink-soft);
   }
@@ -163,15 +163,18 @@ const recentPosts = posts.slice(0, 5);
     font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--ink-soft);
+    color: var(--section-color);
     text-decoration: none;
+    transition: color 0.2s ease;
   }
 
   .all-posts:hover {
-    color: var(--moss-hover);
-    text-decoration: none;
+    color: var(--section-hover);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
   }
 
   @media (prefers-reduced-motion: no-preference) {

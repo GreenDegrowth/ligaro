@@ -140,8 +140,9 @@ html[data-theme="dark"] :is(.astro-code, .astro-code span) {
 a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--link);
-  outline-offset: 2px;
-  border-radius: 4px;
+  outline-offset: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 4px var(--paper);
 }
 
 a {
